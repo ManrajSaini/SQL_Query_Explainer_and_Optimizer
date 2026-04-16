@@ -2,16 +2,16 @@
 
 A full-stack project that analyzes SQL queries, explains what they do in plain language, Show SQL query graph structure, highlights common optimization opportunities.
 
+![Query Input and Explanation](assets/query-input-and-explanation.png)
+
+![Query Structure and Execution Plan](assets/query-structure-and-plan.png)
+
 ## What This Project Is
 
 This project has two apps inside one repository:
 
 - `SqlExplainer.API` (ASP.NET Core Web API)
 - `sql-explainer-ui` (React + Vite frontend)
-
-![Query Input and Explanation](assets/query-input-and-explanation.png)
-
-![Query Structure and Execution Plan](assets/query-structure-and-plan.png)
 
 You paste a SQL query in the UI, send it to the API, and get:
 
