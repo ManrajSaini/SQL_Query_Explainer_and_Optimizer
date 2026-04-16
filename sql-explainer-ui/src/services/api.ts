@@ -1,7 +1,9 @@
 import axios from "axios";
 import type { QueryAnalysisResult } from "../types";
 
-const BASE = "http://localhost:5000/api";
+const BASE = import.meta.env.VITE_API_URL
+  ? `${import.meta.env.VITE_API_URL}/api`
+  : "http://localhost:5000/api";
 
 export async function analyzeQuery(
   sql: string,
